@@ -31,12 +31,12 @@
              
              <!-- responsive dev section links -->
              <ol id="responsive-nav-links">
-                <li class="responsive-nav-link">About</li>
-                <li class="responsive-nav-link">Skills</li>
-                <li class="responsive-nav-link">Portfolio</li>
-                <li class="responsive-nav-link">Experience</li>
-                <li class="responsive-nav-link">Testimonial</li>
-                <li class="responsive-nav-link">Company</li>
+                <li class="responsive-nav-link" @click="(appNavigation('about'))" >About</li>
+                <li class="responsive-nav-link" @click="(appNavigation('skills'))" >Skills</li>
+                <li class="responsive-nav-link" @click="(appNavigation('portfolio'))" >Portfolio</li>
+                <li class="responsive-nav-link" @click="(appNavigation('experience'))" >Experience</li>
+                <li class="responsive-nav-link" @click="(appNavigation('testimonials'))" >Testimonial</li>
+                <!-- <li class="responsive-nav-link">Company</li> -->
             </ol>
         </div>
     </div>

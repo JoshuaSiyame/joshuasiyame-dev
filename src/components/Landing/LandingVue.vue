@@ -44,7 +44,7 @@ import SvgIcon from "@jamescoyle/vue-icon";
 import { mdiInstagram, mdiAlphaXBoxOutline, mdiLinkedin, mdiYoutube } from '@mdi/js';
 
 // landing image binder
-import LandingImage from "../../assets/learn-2.png"
+// import LandingImage from "../../assets/learn-2.png"
 // import MyImage from "../../assets/me.png"
 import MyImage from "@/assets/me/me-5.png"
 </script>
