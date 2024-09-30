@@ -186,6 +186,7 @@ const footer = [
         border-radius: 5px;
         background-color: transparent;
         outline: none;
+        color: white;
     }
 
     /* footer extra newsletter btn */
