@@ -18,6 +18,9 @@
     <!-- experience section -->
     <ExperienceVue />
 
+    <!-- footer section -->
+     <FooterVue />
+
   </ContentWrapperVue>
 </template>
 
@@ -28,6 +31,7 @@ import LandingVue from './components/Landing/LandingVue.vue';
 import PortfolioVue from './components/Portfolio/PortfolioVue.vue';
 import SkillsVue from './components/Skills/SkillsVue.vue';
 import ContentWrapperVue from './utils/ContentWrapperVue.vue';
+import FooterVue from './utils/FooterVue.vue';
 import NavigationVue from './utils/NavigationVue.vue';
 </script>
 
