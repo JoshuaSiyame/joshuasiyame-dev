@@ -80,7 +80,7 @@ const footer = [
 
     /* footer content */
     #footer-content{
-        margin: 5em 0 2em 0;
+        margin: 5em 0 3em 0;
     }
 
     /* footer */
