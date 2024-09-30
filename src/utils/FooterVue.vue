@@ -185,6 +185,7 @@ const footer = [
         border: 1px solid #11b5d2;
         border-radius: 5px;
         background-color: transparent;
+        outline: none;
     }
 
     /* footer extra newsletter btn */
