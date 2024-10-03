@@ -18,6 +18,9 @@
     <!-- experience section -->
     <ExperienceVue />
 
+    <!-- testimonials section -->
+    <TestimonialsVue />
+
     <!-- footer section -->
      <FooterVue />
 
@@ -30,6 +33,7 @@ import ExperienceVue from './components/Experience/ExperienceVue.vue';
 import LandingVue from './components/Landing/LandingVue.vue';
 import PortfolioVue from './components/Portfolio/PortfolioVue.vue';
 import SkillsVue from './components/Skills/SkillsVue.vue';
+import TestimonialsVue from './components/Testimonial/TestimonialsVue.vue';
 import ContentWrapperVue from './utils/ContentWrapperVue.vue';
 import FooterVue from './utils/FooterVue.vue';
 import NavigationVue from './utils/NavigationVue.vue';
