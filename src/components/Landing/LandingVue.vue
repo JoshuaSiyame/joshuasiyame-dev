@@ -10,7 +10,8 @@
             <div id="landing-extra-content">
                 <p id="landing-extra-text">Web &amp; Mobile Software Engineer</p>
                 <p id="landing-extra-about">
-                    I'm a professional software engineer with extensive development skills and knowledge, based in Dar es Salaam, Tanzania.
+                    I'm a professional software engineer with extensive development skills and knowledge, based in Dar
+                    es Salaam, Tanzania.
                 </p>
             </div>
         </div>
@@ -51,6 +52,134 @@ import MyImage from "@/assets/me/me-5.png"
 
 <style lang="css" scoped>
 /* media queries */
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    /* landing */
+    #landing {
+        display: grid;
+        grid-template-columns: 1fr .8fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* landing text container */
+    #landing-text-container {
+        /* border: 1px solid red; */
+        align-self: center;
+    }
+
+    /* landing text greeting */
+    #landing-text-greeting {
+        font-size: 20px;
+    }
+
+    /* landing text greeting 1 */
+    #landing-text-greeting-1 {
+        font-size: 60px;
+    }
+
+    #landing-text-greeting-1::first-letter {
+        text-shadow: -6px -3px 0px #f66657;
+        /* color: #a4d9d6; */
+    }
+
+    /* landing text greeting 2 */
+    #landing-text-greeting-2 {
+        font-size: 60px;
+    }
+
+    /* landing text greeting 2 */
+    #landing-text-greeting-2::first-letter {
+        text-shadow: -6px -3px 0px #e19d32;
+        /* color: #fdb35d; */
+    }
+
+    /* landing text greeting 3 */
+    #landing-text-greeting-3 {
+        font-size: 50px;
+    }
+
+    #landing-text-greeting-3::first-letter {
+        text-shadow: -6px -3px 0px skyblue;
+    }
+
+    /* landing extra content */
+    #landing-extra-content {
+        margin-top: 2em;
+    }
+
+    /* landing extra text */
+    #landing-extra-text {
+        font-size: 20px;
+        color: #11b5d2;
+        margin-bottom: .5em;
+    }
+
+    /* landing extra about */
+    #landing-extra-about {
+        font-size: 18px;
+        max-width: 360px;
+    }
+
+    /* landing image container */
+    #landing-image-container {
+        /* border: 1px solid red; */
+    }
+
+    /* landing image bg */
+    #landing-image-bg {
+        box-shadow: 0px 0px 12px 5px #11b5d2;
+        background-color: #e19d32;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 8em;
+    }
+
+    /* landing image */
+    #landing-image {
+        width: 100%;
+        height: 380px;
+        object-fit: cover;
+        transform: scale(1.25);
+        object-position: 0em 0em;
+    }
+
+    /* landing social links container */
+    #landing-social-links-container {
+        position: absolute;
+        bottom: 3.5em;
+        right: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1em;
+    }
+
+    /* landing social link top link line */
+    #landing-social-link-top-line {
+        display: block;
+        background-color: #e19d32;
+        width: 3px;
+        height: 70px;
+    }
+
+    /* landing social links */
+    #landing-social-links {
+        display: grid;
+        row-gap: .5em;
+    }
+
+    /* landing social link */
+    .landing-social-link {}
+
+    /* landing social link icon */
+    .landing-social-link-icon {
+        color: #f6f6f6;
+    }
+}
+
 @media screen and (min-width: 1201px) {
 
     /* landing */
@@ -121,12 +250,12 @@ import MyImage from "@/assets/me/me-5.png"
     }
 
     /* landing image container */
-    #landing-image-container{
+    #landing-image-container {
         /* border: 1px solid red; */
     }
 
     /* landing image bg */
-    #landing-image-bg{
+    #landing-image-bg {
         box-shadow: 0px 0px 12px 5px #11b5d2;
         background-color: #e19d32;
         width: 300px;
@@ -146,7 +275,7 @@ import MyImage from "@/assets/me/me-5.png"
     }
 
     /* landing social links container */
-    #landing-social-links-container{
+    #landing-social-links-container {
         position: absolute;
         bottom: 3.5em;
         right: 10em;
@@ -157,7 +286,7 @@ import MyImage from "@/assets/me/me-5.png"
     }
 
     /* landing social link top link line */
-    #landing-social-link-top-line{
+    #landing-social-link-top-line {
         display: block;
         background-color: #e19d32;
         width: 3px;
@@ -165,16 +294,16 @@ import MyImage from "@/assets/me/me-5.png"
     }
 
     /* landing social links */
-    #landing-social-links{
+    #landing-social-links {
         display: grid;
         row-gap: .5em;
     }
 
     /* landing social link */
-    .landing-social-link{}
+    .landing-social-link {}
 
     /* landing social link icon */
-    .landing-social-link-icon{
+    .landing-social-link-icon {
         color: #f6f6f6;
     }
 }
