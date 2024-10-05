@@ -59,6 +59,249 @@ const appNavigation = (url: string): void =>{
 
 <style lang="css" scoped>
 /* media queries */
+@media screen and (max-width: 320px) {
+    /* portfolio */
+    #portfolio{
+        margin: 5em 0;
+    }
+
+    /* portfolio header */
+    #portfolio-header{
+        text-align: center;
+        font-size: 32px;
+        /* color: c; */
+    }
+
+    /* portfolio content */
+    #portfolio-content{
+        margin: 2em 0;
+        display: grid;
+        /* grid-template-columns: repeat(1, auto); */
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        row-gap: 3em;
+    }
+
+    /* portfolio item */
+    .portfolio-item{
+        object-fit: cover;
+        width: 250px;
+        height: 325px;
+        border-radius: 10px;
+        /* opacity: .8; */
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    /* portfolio */
+    #portfolio{
+        margin: 5em 0;
+    }
+
+    /* portfolio header */
+    #portfolio-header{
+        text-align: center;
+        font-size: 26px;
+        /* color: c; */
+    }
+
+    /* portfolio content */
+    #portfolio-content{
+        margin: 2em 0;
+        display: grid;
+        /* grid-template-columns: repeat(1, auto); */
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        row-gap: 2em;
+    }
+
+    /* portfolio item */
+    .portfolio-item{
+        object-fit: cover;
+        width: 250px;
+        height: 325px;
+        border-radius: 10px;
+        /* opacity: .8; */
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    /* portfolio */
+    #portfolio{
+        margin: 5em 0;
+    }
+
+    /* portfolio header */
+    #portfolio-header{
+        text-align: center;
+        font-size: 26px;
+        /* color: c; */
+    }
+
+    /* portfolio content */
+    #portfolio-content{
+        margin: 2em 0;
+        display: grid;
+        /* grid-template-columns: repeat(2, auto); */
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        /* column-gap: 2em; */
+        row-gap: 2em;
+    }
+
+    /* portfolio item */
+    .portfolio-item{
+        object-fit: cover;
+        width: 250px;
+        height: 325px;
+        border-radius: 10px;
+        /* opacity: .8; */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    /* portfolio */
+    #portfolio{
+        margin: 5em 0;
+    }
+
+    /* portfolio header */
+    #portfolio-header{
+        text-align: center;
+        font-size: 28px;
+        /* color: c; */
+    }
+
+    /* portfolio content */
+    #portfolio-content{
+        margin: 2em 0;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        column-gap: 2em;
+        row-gap: 2em;
+    }
+
+    /* portfolio item */
+    .portfolio-item{
+        object-fit: cover;
+        width: 250px;
+        height: 325px;
+        border-radius: 10px;
+        /* opacity: .8; */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+    /* portfolio */
+    #portfolio{
+        margin: 5em 0;
+    }
+
+    /* portfolio header */
+    #portfolio-header{
+        text-align: center;
+        font-size: 28px;
+        /* color: c; */
+    }
+
+    /* portfolio content */
+    #portfolio-content{
+        margin: 2em 0;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        column-gap: 2em;
+        row-gap: 2em;
+    }
+
+    /* portfolio item */
+    .portfolio-item{
+        object-fit: cover;
+        width: 250px;
+        height: 325px;
+        border-radius: 10px;
+        /* opacity: .8; */
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+    /* portfolio */
+    #portfolio{
+        margin: 5em 0;
+    }
+
+    /* portfolio header */
+    #portfolio-header{
+        text-align: center;
+        font-size: 28px;
+        /* color: c; */
+    }
+
+    /* portfolio content */
+    #portfolio-content{
+        margin: 2em 0;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        column-gap: 2em;
+        row-gap: 2em;
+    }
+
+    /* portfolio item */
+    .portfolio-item{
+        object-fit: cover;
+        width: 250px;
+        height: 325px;
+        border-radius: 10px;
+        /* opacity: .8; */
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    /* portfolio */
+    #portfolio{
+        margin: 5em 0;
+    }
+
+    /* portfolio header */
+    #portfolio-header{
+        text-align: center;
+        font-size: 28px;
+        /* color: c; */
+    }
+
+    /* portfolio content */
+    #portfolio-content{
+        margin: 2em 0;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        column-gap: 2em;
+        row-gap: 2em;
+    }
+
+    /* portfolio item */
+    .portfolio-item{
+        object-fit: cover;
+        width: 250px;
+        height: 325px;
+        border-radius: 10px;
+        /* opacity: .8; */
+    }
+}
+
 @media screen and (min-width: 1201px) {
     /* portfolio */
     #portfolio{
@@ -77,15 +320,16 @@ const appNavigation = (url: string): void =>{
         margin: 2em 0;
         display: grid;
         grid-template-columns: repeat(3, auto);
-        justify-content: space-between;
+        justify-content: center;
         row-gap: 3em;
+        column-gap: 3em;
     }
 
     /* portfolio item */
     .portfolio-item{
         object-fit: cover;
-        width: 325px;
-        height: 400px;
+        width: 275px;
+        height: 350px;
         border-radius: 10px;
         /* opacity: .8; */
     }
