@@ -49,6 +49,520 @@ const experiences = [
 
 <style lang="css" scoped>
 /* media queries */
+@media screen and (max-width: 320px) {
+
+/* experience */
+#experience {
+    margin: 5em 0;
+}
+
+/* experience header */
+#experience-header {
+    font-size: 24px;
+    /* text-align: center; */
+}
+
+/* experience content */
+#experience-content {
+    margin-top: 1em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* experience item */
+.experience-item {
+    /* display: flex; */
+    column-gap: 1em;
+    align-items: baseline;
+    margin: 1em 0;
+}
+
+/* experience item header */
+.experience-item-header {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* experience item figures */
+.experience-item-figures {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    align-content: center;
+    column-gap: .5em;
+    row-gap: .5em;
+    margin: 1em 0;
+}
+
+/* experience item dot */
+.experience-item-dot {
+    display: block;
+    background-color: #fdb848;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* experience item line */
+.experience-item-line {
+    display: block;
+    height: 2px;
+    min-width: 125px;
+    background-color: #11b5d2;
+}
+
+/* experience item content */
+.experience-item-content {}
+
+/* experience item content header */
+.experience-item-content-header {
+    font-size: 20px;
+}
+
+/* experience item content subheader */
+.experience-item-content-subheader {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff90;
+}
+
+/* experience item content text */
+.experience-item-content-text {
+    font-size: 14px;
+    width: 300px;
+}
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+/* experience */
+#experience {
+    margin: 5em 0;
+}
+
+/* experience header */
+#experience-header {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* experience content */
+#experience-content {
+    margin-top: 1em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* experience item */
+.experience-item {
+    /* display: flex; */
+    column-gap: 1em;
+    align-items: baseline;
+    margin: 1em 0;
+}
+
+/* experience item header */
+.experience-item-header {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* experience item figures */
+.experience-item-figures {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    align-content: center;
+    column-gap: .5em;
+    row-gap: .5em;
+    margin: 1em 0;
+}
+
+/* experience item dot */
+.experience-item-dot {
+    display: block;
+    background-color: #fdb848;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* experience item line */
+.experience-item-line {
+    display: block;
+    height: 2px;
+    min-width: 125px;
+    background-color: #11b5d2;
+}
+
+/* experience item content */
+.experience-item-content {}
+
+/* experience item content header */
+.experience-item-content-header {
+    font-size: 20px;
+}
+
+/* experience item content subheader */
+.experience-item-content-subheader {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff90;
+}
+
+/* experience item content text */
+.experience-item-content-text {
+    font-size: 14px;
+    width: 300px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+
+/* experience */
+#experience {
+    margin: 5em 0;
+}
+
+/* experience header */
+#experience-header {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* experience content */
+#experience-content {
+    margin-top: 3em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* experience item */
+.experience-item {
+    display: flex;
+    column-gap: 1em;
+    align-items: baseline;
+    margin: 2em 0;
+}
+
+/* experience item header */
+.experience-item-header {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* experience item figures */
+.experience-item-figures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: .5em;
+}
+
+/* experience item dot */
+.experience-item-dot {
+    display: block;
+    background-color: #fdb848;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* experience item line */
+.experience-item-line {
+    display: block;
+    min-height: 125px;
+    width: 2px;
+    background-color: #11b5d2;
+}
+
+/* experience item content */
+.experience-item-content {}
+
+/* experience item content header */
+.experience-item-content-header {
+    font-size: 20px;
+}
+
+/* experience item content subheader */
+.experience-item-content-subheader {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff90;
+}
+
+/* experience item content text */
+.experience-item-content-text {
+    font-size: 14px;
+    width: 300px;
+}
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+/* experience */
+#experience {
+    margin: 5em 0;
+}
+
+/* experience header */
+#experience-header {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* experience content */
+#experience-content {
+    margin-top: 3em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* experience item */
+.experience-item {
+    display: flex;
+    column-gap: 2em;
+    align-items: baseline;
+    margin: 2em 0;
+}
+
+/* experience item header */
+.experience-item-header {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* experience item figures */
+.experience-item-figures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: .5em;
+}
+
+/* experience item dot */
+.experience-item-dot {
+    display: block;
+    background-color: #fdb848;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* experience item line */
+.experience-item-line {
+    display: block;
+    min-height: 125px;
+    width: 2px;
+    background-color: #11b5d2;
+}
+
+/* experience item content */
+.experience-item-content {}
+
+/* experience item content header */
+.experience-item-content-header {
+    font-size: 20px;
+}
+
+/* experience item content subheader */
+.experience-item-content-subheader {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff90;
+}
+
+/* experience item content text */
+.experience-item-content-text {
+    font-size: 14px;
+    width: 350px;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+/* experience */
+#experience {
+    margin: 5em 0;
+}
+
+/* experience header */
+#experience-header {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* experience content */
+#experience-content {
+    margin-top: 3em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* experience item */
+.experience-item {
+    display: flex;
+    column-gap: 2em;
+    align-items: baseline;
+    margin: 2em 0;
+}
+
+/* experience item header */
+.experience-item-header {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* experience item figures */
+.experience-item-figures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: .5em;
+}
+
+/* experience item dot */
+.experience-item-dot {
+    display: block;
+    background-color: #fdb848;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* experience item line */
+.experience-item-line {
+    display: block;
+    min-height: 125px;
+    width: 2px;
+    background-color: #11b5d2;
+}
+
+/* experience item content */
+.experience-item-content {}
+
+/* experience item content header */
+.experience-item-content-header {
+    font-size: 20px;
+}
+
+/* experience item content subheader */
+.experience-item-content-subheader {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff90;
+}
+
+/* experience item content text */
+.experience-item-content-text {
+    font-size: 14px;
+    width: 450px;
+}
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+/* experience */
+#experience {
+    margin: 5em 0;
+}
+
+/* experience header */
+#experience-header {
+    font-size: 32px;
+    text-align: center;
+}
+
+/* experience content */
+#experience-content {
+    margin-top: 3em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* experience item */
+.experience-item {
+    display: flex;
+    column-gap: 2em;
+    align-items: baseline;
+    margin: 2em 0;
+}
+
+/* experience item header */
+.experience-item-header {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* experience item figures */
+.experience-item-figures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: .5em;
+}
+
+/* experience item dot */
+.experience-item-dot {
+    display: block;
+    background-color: #fdb848;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+/* experience item line */
+.experience-item-line {
+    display: block;
+    min-height: 125px;
+    width: 2px;
+    background-color: #11b5d2;
+}
+
+/* experience item content */
+.experience-item-content {}
+
+/* experience item content header */
+.experience-item-content-header {
+    font-size: 26px;
+}
+
+/* experience item content subheader */
+.experience-item-content-subheader {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff90;
+}
+
+/* experience item content text */
+.experience-item-content-text {
+    font-size: 15px;
+    width: 575px;
+}
+}
+
 @media screen and (min-width: 1201px) {
 
     /* experience */

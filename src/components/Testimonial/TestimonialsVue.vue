@@ -3,10 +3,12 @@
         <h3 id="testimonials-header">Testimonials</h3>
         <div id="testimonials-content">
             <div id="testimonials-list">
-                <div class="testimonial-item" v-for="(testimonial, index) in testimonials.slice(0, 5)" @click="()=>{ selectedTestimony = index }">
+                <div class="testimonial-item" v-for="(testimonial, index) in testimonials.slice(0, 5)"
+                    @click="() => { selectedTestimony = index }">
                     <img :src="testimonial['image']" alt="" class="testimonial-item-img">
                     <div class="testimonial-item-details">
-                        <h3 class="testimonial-item-name">{{ testimonial.full_name }}<span class="testimonial-item-company"> - {{testimonial.company}}</span></h3>
+                        <h3 class="testimonial-item-name">{{ testimonial.full_name }}<span
+                                class="testimonial-item-company"> - {{ testimonial.company }}</span></h3>
                         <p class="testimonial-item-role">@{{ testimonial.position }}</p>
                     </div>
                 </div>
@@ -18,10 +20,12 @@
                     <br />
                     {{ testimonials[selectedTestimony]['text'] }}
                 </p>
-                <div class="testimonial-item-details">
-                        <h3 class="testimonial-item-name">{{ testimonials[selectedTestimony].full_name }} <span class="testimonial-item-company"> - {{testimonials[selectedTestimony].company}}</span></h3>
-                        <p class="testimonial-item-role">@{{ testimonials[selectedTestimony].position }}</p>
-                    </div>
+                <div class="testimonial-text-item-details">
+                    <h3 class="testimonial-item-name">{{ testimonials[selectedTestimony].full_name }} <span
+                            class="testimonial-item-company"> - {{ testimonials[selectedTestimony].company }}</span>
+                    </h3>
+                    <p class="testimonial-item-role">@{{ testimonials[selectedTestimony].position }}</p>
+                </div>
             </div>
         </div>
     </div>
@@ -78,6 +82,519 @@ const testimonials = [
 
 <style lang="css" scoped>
 /* media queries */
+@media screen and (max-width: 320px) {
+
+    /* testimonials */
+    #testimonials {
+        margin: 5em 0;
+    }
+
+    /* testimonials header */
+    #testimonials-header {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    /* testimonials content */
+    #testimonials-content {
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* align-items: center; */
+    }
+
+    /* testimonials list */
+    #testimonials-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1em;
+        row-gap: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* testimonial item */
+    .testimonial-item {
+        display: flex;
+        align-items: center;
+        column-gap: 1em;
+        margin: 0em 0;
+        background-color: #f5f5f515;
+        padding: .8em;
+        border-radius: 10px;
+        /* width: 350px; */
+        width: fit-content;
+    }
+
+    /* testimonial item img */
+    .testimonial-item-img {
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    /* testimonial item details */
+    .testimonial-item-details {
+        display: none;
+    }
+
+    /* testimonial item name */
+    .testimonial-item-name {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* testimonial item small */
+    .testimonial-item-role {
+        color: #f5f5f590;
+        font-size: 16px;
+    }
+
+    /* testimonial item role */
+    .testimonial-item-company {
+        color: #f5f5f590;
+        font-size: 14px;
+    }
+
+    /* testimonial text content */
+    .testimonial-text-content {
+        display: grid;
+        /* grid-template-columns: auto 1fr; */
+        align-items: baseline;
+        column-gap: 1em;
+        row-gap: 1em;
+        margin-top: 2em;
+    }
+
+    /* testimonial text line */
+    .testimonial-text-line {
+        width: 100px;
+        height: 2px;
+        background-color: #fdb848;
+    }
+
+    /* testimonial text */
+    .testimonial-text {
+        font-family: 'kanit';
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* testimonial text item details */
+    .testimonial-text-item-details {
+        text-align: center;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+    /* testimonials */
+    #testimonials {
+        margin: 5em 0;
+    }
+
+    /* testimonials header */
+    #testimonials-header {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    /* testimonials content */
+    #testimonials-content {
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* align-items: center; */
+    }
+
+    /* testimonials list */
+    #testimonials-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1em;
+        row-gap: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* testimonial item */
+    .testimonial-item {
+        display: flex;
+        align-items: center;
+        column-gap: 1em;
+        margin: 0em 0;
+        background-color: #f5f5f515;
+        padding: .8em;
+        border-radius: 10px;
+        /* width: 350px; */
+        width: fit-content;
+    }
+
+    /* testimonial item img */
+    .testimonial-item-img {
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    /* testimonial item details */
+    .testimonial-item-details {
+        display: none;
+    }
+
+    /* testimonial item name */
+    .testimonial-item-name {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* testimonial item small */
+    .testimonial-item-role {
+        color: #f5f5f590;
+        font-size: 16px;
+    }
+
+    /* testimonial item role */
+    .testimonial-item-company {
+        color: #f5f5f590;
+        font-size: 14px;
+    }
+
+    /* testimonial text content */
+    .testimonial-text-content {
+        display: grid;
+        /* grid-template-columns: auto 1fr; */
+        align-items: baseline;
+        column-gap: 1em;
+        row-gap: 1em;
+        margin-top: 2em;
+    }
+
+    /* testimonial text line */
+    .testimonial-text-line {
+        width: 100px;
+        height: 2px;
+        background-color: #fdb848;
+    }
+
+    /* testimonial text */
+    .testimonial-text {
+        font-family: 'kanit';
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* testimonial text item details */
+    .testimonial-text-item-details {
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+/* testimonials */
+#testimonials {
+    margin: 5em 0;
+}
+
+/* testimonials header */
+#testimonials-header {
+    text-align: center;
+    font-size: 24px;
+}
+
+/* testimonials content */
+#testimonials-content {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* align-items: center; */
+}
+
+/* testimonials list */
+#testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+/* testimonial item */
+.testimonial-item {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    margin: 0em 0;
+    background-color: #f5f5f515;
+    padding: .8em;
+    border-radius: 10px;
+    /* width: 350px; */
+    width: fit-content;
+}
+
+/* testimonial item img */
+.testimonial-item-img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* testimonial item details */
+.testimonial-item-details {
+    display: none;
+}
+
+/* testimonial item name */
+.testimonial-item-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* testimonial item small */
+.testimonial-item-role {
+    color: #f5f5f590;
+    font-size: 16px;
+}
+
+/* testimonial item role */
+.testimonial-item-company {
+    color: #f5f5f590;
+    font-size: 14px;
+}
+
+/* testimonial text content */
+.testimonial-text-content {
+    display: grid;
+    /* grid-template-columns: auto 1fr; */
+    align-items: baseline;
+    column-gap: 1em;
+    row-gap: 1em;
+    margin-top: 2em;
+}
+
+/* testimonial text line */
+.testimonial-text-line {
+    width: 100px;
+    height: 2px;
+    background-color: #fdb848;
+}
+
+/* testimonial text */
+.testimonial-text {
+    font-family: 'kanit';
+    font-size: 16px;
+    text-align: center;
+}
+
+/* testimonial text item details */
+.testimonial-text-item-details {
+    text-align: center;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+/* testimonials */
+#testimonials {
+    margin: 5em 0;
+}
+
+/* testimonials header */
+#testimonials-header {
+    text-align: center;
+    font-size: 24px;
+}
+
+/* testimonials content */
+#testimonials-content {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* align-items: center; */
+}
+
+/* testimonials list */
+#testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+/* testimonial item */
+.testimonial-item {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    margin: 0em 0;
+    background-color: #f5f5f515;
+    padding: .8em;
+    border-radius: 10px;
+    /* width: 350px; */
+    width: fit-content;
+}
+
+/* testimonial item img */
+.testimonial-item-img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* testimonial item details */
+.testimonial-item-details {
+    /* display: none; */
+}
+
+/* testimonial item name */
+.testimonial-item-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* testimonial item small */
+.testimonial-item-role {
+    color: #f5f5f590;
+    font-size: 16px;
+}
+
+/* testimonial item role */
+.testimonial-item-company {
+    color: #f5f5f590;
+    font-size: 14px;
+}
+
+/* testimonial text content */
+.testimonial-text-content {
+    display: grid;
+    /* grid-template-columns: auto 1fr; */
+    align-items: baseline;
+    column-gap: 1em;
+    row-gap: 1em;
+    margin-top: 2em;
+}
+
+/* testimonial text line */
+.testimonial-text-line {
+    width: 100px;
+    height: 2px;
+    background-color: #fdb848;
+}
+
+/* testimonial text */
+.testimonial-text {
+    font-family: 'kanit';
+    font-size: 16px;
+    text-align: center;
+}
+
+/* testimonial text item details */
+.testimonial-text-item-details {
+    text-align: center;
+}
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+/* testimonials */
+#testimonials {
+    margin: 5em;
+}
+
+/* testimonials header */
+#testimonials-header {
+    text-align: center;
+    font-size: 32px;
+}
+
+/* testimonials content */
+#testimonials-content {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+/* testimonial list */
+#testimonial-list {
+    display: grid;
+}
+
+/* testimonial item */
+.testimonial-item {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    margin: 1em 0;
+    background-color: #f5f5f515;
+    padding: .8em;
+    border-radius: 10px;
+    width: 350px;
+}
+
+/* testimonial item img */
+.testimonial-item-img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* testimonial item details */
+.testimonial-item-details {}
+
+/* testimonial item name */
+.testimonial-item-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* testimonial item small */
+.testimonial-item-role {
+    color: #f5f5f590;
+    font-size: 16px;
+}
+
+/* testimonial item role */
+.testimonial-item-company {
+    color: #f5f5f590;
+    font-size: 14px;
+}
+
+/* testimonial text content */
+.testimonial-text-content {
+    display: grid;
+    /* grid-template-columns: auto 1fr; */
+    align-items: baseline;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+/* testimonial text line */
+.testimonial-text-line {
+    width: 100px;
+    height: 2px;
+    background-color: #fdb848;
+}
+
+/* testimonial text */
+.testimonial-text {
+    font-family: 'kanit';
+    font-size: 20px;
+}
+
+/* testimonial text item details */
+.testimonial-text-item-details {}
+}
+
 @media screen and (min-width: 1201px) {
 
     /* testimonials */
@@ -134,7 +651,7 @@ const testimonials = [
     }
 
     /* testimonial item small */
-    .testimonial-item-role{
+    .testimonial-item-role {
         color: #f5f5f590;
         font-size: 16px;
     }
@@ -146,7 +663,7 @@ const testimonials = [
     }
 
     /* testimonial text content */
-    .testimonial-text-content{
+    .testimonial-text-content {
         display: grid;
         /* grid-template-columns: auto 1fr; */
         align-items: baseline;
@@ -155,16 +672,19 @@ const testimonials = [
     }
 
     /* testimonial text line */
-    .testimonial-text-line{
+    .testimonial-text-line {
         width: 100px;
         height: 2px;
         background-color: #fdb848;
     }
 
     /* testimonial text */
-    .testimonial-text{
+    .testimonial-text {
         font-family: 'kanit';
         font-size: 20px;
     }
+
+    /* testimonial text item details */
+    .testimonial-text-item-details {}
 }
 </style>

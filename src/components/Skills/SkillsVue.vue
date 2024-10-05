@@ -250,7 +250,7 @@ const skills = [
     }
 }
 
-@media (min-width: 321px) and (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 400px) {
 
     /* skills */
     #skills {
@@ -277,7 +277,7 @@ const skills = [
         /* Let the grid container shrink to the content width */
 
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
         /* 6 columns with auto width */
 
         justify-content: center;
@@ -297,7 +297,7 @@ const skills = [
         /* border: 1px solid rgb(151, 201, 132); */
         max-width: fit-content;
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
         /* justify-content: space-between; */
         column-gap: 1em;
         row-gap: 1em;
@@ -309,7 +309,7 @@ const skills = [
         /* border: 1px solid rgb(151, 201, 132); */
         max-width: fit-content;
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
         /* justify-content: center; */
         /* justify-self: center; */
         /* align-items: center; */
@@ -325,7 +325,7 @@ const skills = [
         /* border: 1px solid rgb(151, 201, 132); */
         max-width: fit-content;
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
         /* justify-content: center; */
         /* justify-self: center; */
         /* align-items: center; */
@@ -374,6 +374,132 @@ const skills = [
         font-weight: 500;
         margin-top: .5em;
     }
+}
+
+@media (min-width: 401px) and (max-width: 480px) {
+
+/* skills */
+#skills {
+    margin: 5em 0;
+}
+
+/* skills header */
+#skills-header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* skill content */
+.skill-content {
+    margin: 2em auto;
+}
+
+/* skills content */
+#skills-content-1 {
+    margin: 1em auto;
+    /* border: 1px solid red; */
+    max-width: fit-content;
+    /* Let the grid container shrink to the content width */
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* 6 columns with auto width */
+
+    justify-content: center;
+    /* Center the grid items horizontally */
+    align-content: center;
+    /* Center the grid items vertically */
+
+    column-gap: 1em;
+    /* Space between columns */
+    row-gap: 1em;
+    /* Space between rows */
+}
+
+/* skills content */
+#skills-content-2 {
+    margin: 1em auto;
+    /* border: 1px solid rgb(151, 201, 132); */
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* justify-content: space-between; */
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+/* skills content */
+#skills-content-3 {
+    margin: 1em auto;
+    /* border: 1px solid rgb(151, 201, 132); */
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* align-items: center; */
+    /* align-self: center; */
+    /* align-content: center; */
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+/* skills content */
+#skills-content-4 {
+    margin: 1em auto;
+    /* border: 1px solid rgb(151, 201, 132); */
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* align-items: center; */
+    /* align-self: center; */
+    /* align-content: center; */
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+/* skills content */
+#skills-content-5 {
+    margin: 1em auto;
+    /* border: 1px solid rgb(151, 201, 132); */
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* justify-content: center; */
+    /* justify-self: center; */
+    /* align-items: center; */
+    /* align-self: center; */
+    /* align-content: center; */
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+/* skill item */
+.skill-item {
+    background-color: #D4D4Ce20;
+    width: 110px;
+    padding: 1em;
+    border-radius: 6px;
+    height: 100px;
+}
+
+/* skill image */
+.skill-icon {
+    display: block;
+    margin: 0 auto;
+    width: 45px;
+}
+
+/* skill title */
+.skill-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: .5em;
+}
 }
 
 @media (min-width: 481px) and (max-width: 650px) {
