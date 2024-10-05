@@ -52,6 +52,566 @@ import MyImage from "@/assets/me/me-5.png"
 
 <style lang="css" scoped>
 /* media queries */
+@media screen and (max-width: 320px) {
+
+    /* landing */
+    #landing {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* align-items: center; */
+        /* justify-content: center; */
+        column-gap: 1em;
+        row-gap: 1em;
+        margin-top: 4em;
+        /* border: 1px solid aqua; */
+    }
+
+    /* landing text container */
+    #landing-text-container {
+        /* border: 1px solid red; */
+        align-self: center;
+    }
+
+    /* landing text greeting */
+    #landing-text-greeting {
+        font-size: 16px;
+    }
+
+    /* landing text greeting 1 */
+    #landing-text-greeting-1 {
+        font-size: 30px;
+    }
+
+    #landing-text-greeting-1::first-letter {
+        text-shadow: -6px -3px 0px #f66657;
+        /* color: #a4d9d6; */
+    }
+
+    /* landing text greeting 2 */
+    #landing-text-greeting-2 {
+        font-size: 30px;
+    }
+
+    /* landing text greeting 2 */
+    #landing-text-greeting-2::first-letter {
+        text-shadow: -6px -3px 0px #e19d32;
+        /* color: #fdb35d; */
+    }
+
+    /* landing text greeting 3 */
+    #landing-text-greeting-3 {
+        font-size: 30px;
+    }
+
+    #landing-text-greeting-3::first-letter {
+        text-shadow: -6px -3px 0px skyblue;
+    }
+
+    /* landing extra content */
+    #landing-extra-content {
+        margin-top: 2em;
+    }
+
+    /* landing extra text */
+    #landing-extra-text {
+        font-size: 16px;
+        color: #11b5d2;
+        margin-bottom: .5em;
+    }
+
+    /* landing extra about */
+    #landing-extra-about {
+        font-size: 14px;
+        max-width: 360px;
+    }
+
+    /* landing image container */
+    #landing-image-container {
+        /* border: 1px solid turquoise; */
+        position: relative;
+    }
+
+    /* landing image bg */
+    #landing-image-bg {
+        box-shadow: 0px 0px 12px 5px #11b5d2;
+        background-color: #e19d32;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 8em;
+        z-index: 1;
+    }
+
+    /* landing image */
+    #landing-image {
+        /* display: none; */
+        /* border: 1px solid green; */
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        position: relative;
+        z-index: 9999;
+        /* transform: scale(1.25); */
+        /* object-position: 0em 0em; */
+    }
+
+    /* landing social links container */
+    #landing-social-links-container {
+        /* border: 1px solid salmon; */
+        position: absolute;
+        bottom: .5em;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        row-gap: 1em;
+        width: fit-content;
+        right: 0;
+    }
+
+    /* landing social link top link line */
+    #landing-social-link-top-line {
+        display: block;
+        background-color: #e19d32;
+        width: 3px;
+        height: 70px;
+    }
+
+    /* landing social links */
+    #landing-social-links {
+        display: grid;
+        row-gap: .5em;
+    }
+
+    /* landing social link */
+    .landing-social-link {}
+
+    /* landing social link icon */
+    .landing-social-link-icon {
+        color: #f6f6f6;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+    /* landing */
+    #landing {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* align-items: center; */
+        /* justify-content: center; */
+        column-gap: 1em;
+        row-gap: 1em;
+        margin-top: 4em;
+        /* border: 1px solid aqua; */
+    }
+
+    /* landing text container */
+    #landing-text-container {
+        /* border: 1px solid red; */
+        align-self: center;
+    }
+
+    /* landing text greeting */
+    #landing-text-greeting {
+        font-size: 18px;
+    }
+
+    /* landing text greeting 1 */
+    #landing-text-greeting-1 {
+        font-size: 35px;
+    }
+
+    #landing-text-greeting-1::first-letter {
+        text-shadow: -6px -3px 0px #f66657;
+        /* color: #a4d9d6; */
+    }
+
+    /* landing text greeting 2 */
+    #landing-text-greeting-2 {
+        font-size: 35px;
+    }
+
+    /* landing text greeting 2 */
+    #landing-text-greeting-2::first-letter {
+        text-shadow: -6px -3px 0px #e19d32;
+        /* color: #fdb35d; */
+    }
+
+    /* landing text greeting 3 */
+    #landing-text-greeting-3 {
+        font-size: 35px;
+    }
+
+    #landing-text-greeting-3::first-letter {
+        text-shadow: -6px -3px 0px skyblue;
+    }
+
+    /* landing extra content */
+    #landing-extra-content {
+        margin-top: 2em;
+    }
+
+    /* landing extra text */
+    #landing-extra-text {
+        font-size: 16px;
+        color: #11b5d2;
+        margin-bottom: .5em;
+    }
+
+    /* landing extra about */
+    #landing-extra-about {
+        font-size: 14px;
+        max-width: 360px;
+    }
+
+    /* landing image container */
+    #landing-image-container {
+        /* border: 1px solid turquoise; */
+        position: relative;
+    }
+
+    /* landing image bg */
+    #landing-image-bg {
+        box-shadow: 0px 0px 12px 5px #11b5d2;
+        background-color: #e19d32;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 8em;
+        z-index: 1;
+    }
+
+    /* landing image */
+    #landing-image {
+        /* display: none; */
+        /* border: 1px solid green; */
+        width: 100%;
+        height: 425px;
+        object-fit: cover;
+        position: relative;
+        z-index: 9999;
+        /* transform: scale(1.25); */
+        /* object-position: 0em 0em; */
+    }
+
+    /* landing social links container */
+    #landing-social-links-container {
+        /* border: 1px solid salmon; */
+        position: absolute;
+        bottom: .5em;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        row-gap: 1em;
+        width: fit-content;
+        right: 0;
+    }
+
+    /* landing social link top link line */
+    #landing-social-link-top-line {
+        display: block;
+        background-color: #e19d32;
+        width: 3px;
+        height: 70px;
+    }
+
+    /* landing social links */
+    #landing-social-links {
+        display: grid;
+        row-gap: .5em;
+    }
+
+    /* landing social link */
+    .landing-social-link {}
+
+    /* landing social link icon */
+    .landing-social-link-icon {
+        color: #f6f6f6;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+
+/* landing */
+#landing {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* align-items: center; */
+    /* justify-content: center; */
+    column-gap: 1em;
+    row-gap: 1em;
+    margin-top: 4em;
+    /* border: 1px solid aqua; */
+}
+
+/* landing text container */
+#landing-text-container {
+    /* border: 1px solid red; */
+    align-self: center;
+}
+
+/* landing text greeting */
+#landing-text-greeting {
+    font-size: 18px;
+}
+
+/* landing text greeting 1 */
+#landing-text-greeting-1 {
+    font-size: 40px;
+}
+
+#landing-text-greeting-1::first-letter {
+    text-shadow: -6px -3px 0px #f66657;
+    /* color: #a4d9d6; */
+}
+
+/* landing text greeting 2 */
+#landing-text-greeting-2 {
+    font-size: 40px;
+}
+
+/* landing text greeting 2 */
+#landing-text-greeting-2::first-letter {
+    text-shadow: -6px -3px 0px #e19d32;
+    /* color: #fdb35d; */
+}
+
+/* landing text greeting 3 */
+#landing-text-greeting-3 {
+    font-size: 40px;
+}
+
+#landing-text-greeting-3::first-letter {
+    text-shadow: -6px -3px 0px skyblue;
+}
+
+/* landing extra content */
+#landing-extra-content {
+    margin-top: 2em;
+}
+
+/* landing extra text */
+#landing-extra-text {
+    font-size: 16px;
+    color: #11b5d2;
+    margin-bottom: .5em;
+}
+
+/* landing extra about */
+#landing-extra-about {
+    font-size: 15px;
+    max-width: 360px;
+}
+
+/* landing image container */
+#landing-image-container {
+    /* border: 1px solid turquoise; */
+    position: relative;
+}
+
+/* landing image bg */
+#landing-image-bg {
+    box-shadow: 0px 0px 12px 5px #11b5d2;
+    background-color: #e19d32;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8em;
+    z-index: 1;
+}
+
+/* landing image */
+#landing-image {
+    /* display: none; */
+    /* border: 1px solid green; */
+    width: 325px;
+    height: 450px;
+    object-fit: cover;
+    position: relative;
+    z-index: 9999;
+    /* transform: scale(1.25); */
+    /* object-position: 0em 0em; */
+}
+
+/* landing social links container */
+#landing-social-links-container {
+    /* border: 1px solid salmon; */
+    position: absolute;
+    bottom: .5em;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    row-gap: 1em;
+    width: fit-content;
+    right: 0;
+}
+
+/* landing social link top link line */
+#landing-social-link-top-line {
+    display: block;
+    background-color: #e19d32;
+    width: 3px;
+    height: 70px;
+}
+
+/* landing social links */
+#landing-social-links {
+    display: grid;
+    row-gap: .5em;
+}
+
+/* landing social link */
+.landing-social-link {}
+
+/* landing social link icon */
+.landing-social-link-icon {
+    color: #f6f6f6;
+}
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+
+/* landing */
+#landing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* align-items: center; */
+    /* justify-content: center; */
+    column-gap: 1em;
+    row-gap: 1em;
+    margin-top: 4em;
+    /* border: 1px solid aqua; */
+}
+
+/* landing text container */
+#landing-text-container {
+    /* border: 1px solid red; */
+    align-self: center;
+}
+
+/* landing text greeting */
+#landing-text-greeting {
+    font-size: 18px;
+}
+
+/* landing text greeting 1 */
+#landing-text-greeting-1 {
+    font-size: 40px;
+}
+
+#landing-text-greeting-1::first-letter {
+    text-shadow: -6px -3px 0px #f66657;
+    /* color: #a4d9d6; */
+}
+
+/* landing text greeting 2 */
+#landing-text-greeting-2 {
+    font-size: 40px;
+}
+
+/* landing text greeting 2 */
+#landing-text-greeting-2::first-letter {
+    text-shadow: -6px -3px 0px #e19d32;
+    /* color: #fdb35d; */
+}
+
+/* landing text greeting 3 */
+#landing-text-greeting-3 {
+    font-size: 40px;
+}
+
+#landing-text-greeting-3::first-letter {
+    text-shadow: -6px -3px 0px skyblue;
+}
+
+/* landing extra content */
+#landing-extra-content {
+    margin-top: 2em;
+}
+
+/* landing extra text */
+#landing-extra-text {
+    font-size: 16px;
+    color: #11b5d2;
+    margin-bottom: .5em;
+}
+
+/* landing extra about */
+#landing-extra-about {
+    font-size: 15px;
+    max-width: 360px;
+}
+
+/* landing image container */
+#landing-image-container {
+    /* border: 1px solid turquoise; */
+    position: relative;
+}
+
+/* landing image bg */
+#landing-image-bg {
+    box-shadow: 0px 0px 12px 5px #11b5d2;
+    background-color: #e19d32;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8em;
+    z-index: 1;
+}
+
+/* landing image */
+#landing-image {
+    /* display: none; */
+    /* border: 1px solid green; */
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    position: relative;
+    z-index: 9999;
+    /* transform: scale(1.25); */
+    /* object-position: 0em 0em; */
+}
+
+/* landing social links container */
+#landing-social-links-container {
+    /* border: 1px solid salmon; */
+    position: absolute;
+    bottom: .5em;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    row-gap: 1em;
+    width: fit-content;
+    right: 0;
+}
+
+/* landing social link top link line */
+#landing-social-link-top-line {
+    display: block;
+    background-color: #e19d32;
+    width: 3px;
+    height: 70px;
+}
+
+/* landing social links */
+#landing-social-links {
+    display: grid;
+    row-gap: .5em;
+}
+
+/* landing social link */
+.landing-social-link {}
+
+/* landing social link icon */
+.landing-social-link-icon {
+    color: #f6f6f6;
+}
+}
+
 @media (min-width: 1025px) and (max-width: 1200px) {
 
     /* landing */
@@ -70,12 +630,12 @@ import MyImage from "@/assets/me/me-5.png"
 
     /* landing text greeting */
     #landing-text-greeting {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     /* landing text greeting 1 */
     #landing-text-greeting-1 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     #landing-text-greeting-1::first-letter {
@@ -85,7 +645,7 @@ import MyImage from "@/assets/me/me-5.png"
 
     /* landing text greeting 2 */
     #landing-text-greeting-2 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     /* landing text greeting 2 */
