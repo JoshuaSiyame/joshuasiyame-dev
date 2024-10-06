@@ -112,20 +112,20 @@ const appNavigation = (path: string): void =>{
 }
 
 /* responsive nav */
-#responsive-nav {}
-
-/* responsive nav bg */
-#responsive-nav-bg {
-    background-color: rgba(83, 92, 95, .8);
-    /* background-color: #ff000050; */
-    width: 100%;
-    height: 100vh;
+#responsive-nav {
+    background-color: #287094;
     position: absolute;
+    width: 100%;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    padding: 2em 0;
+    z-index: 999;
 }
+
+/* responsive nav bg */
+#responsive-nav-bg {}
 
 /* responsive nav links container */
 #responsive-nav-links-container {
