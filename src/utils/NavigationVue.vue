@@ -27,7 +27,7 @@
              
              <!-- responsive dev section links -->
              <ol id="responsive-nav-links">
-                <li class="responsive-nav-link" v-for="(link, index) in links" @click="(appNavigation(link))" >{{ link }}</li>
+                <li class="responsive-nav-link" v-for="(link, index) in links" @click="()=>{ appNavigation(link); showResponsiveNav = false}" >{{ link }}</li>
                 <!-- <li class="responsive-nav-link">Company</li> -->
             </ol>
         </div>
