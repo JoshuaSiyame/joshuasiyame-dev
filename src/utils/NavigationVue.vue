@@ -45,7 +45,7 @@ import SendEmail from "../assets/mail-2.png"
 
 // links list
 const links = [
-    'about', 'skills', 'portfolio', 'experience', 'testimonial'
+    'about', 'skills', 'portfolio', 'experience', 'testimonials'
 ]
 
 // show dev section links binder
