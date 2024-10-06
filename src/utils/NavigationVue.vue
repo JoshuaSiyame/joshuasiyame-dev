@@ -6,11 +6,7 @@
 
         <!-- dev section links -->
         <ol id="dev-section-links" v-if="showDevSectionLinks">
-            <li class="dev-section-link" @click="appNavigation('about')">About</li>
-            <li class="dev-section-link" @click="appNavigation('skills')">Skills</li>
-            <li class="dev-section-link" @click="appNavigation('portfolio')">Portfolio</li>
-            <li class="dev-section-link" @click="appNavigation('experience')">Experience</li>
-            <li class="dev-section-link" @click="appNavigation('testimonials')">Testimonials</li>
+            <li class="dev-section-link" v-for="(link, index) in links" @click="appNavigation(link)">{{ link }}</li>
             <!-- <li class="dev-section-link">Company</li> -->
         </ol>
 
@@ -31,11 +27,7 @@
              
              <!-- responsive dev section links -->
              <ol id="responsive-nav-links">
-                <li class="responsive-nav-link" @click="(appNavigation('about'))" >About</li>
-                <li class="responsive-nav-link" @click="(appNavigation('skills'))" >Skills</li>
-                <li class="responsive-nav-link" @click="(appNavigation('portfolio'))" >Portfolio</li>
-                <li class="responsive-nav-link" @click="(appNavigation('experience'))" >Experience</li>
-                <li class="responsive-nav-link" @click="(appNavigation('testimonials'))" >Testimonial</li>
+                <li class="responsive-nav-link" v-for="(link, index) in links" @click="(appNavigation(link))" >{{ link }}</li>
                 <!-- <li class="responsive-nav-link">Company</li> -->
             </ol>
         </div>
@@ -43,13 +35,18 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { onBeforeMount, ref } from "vue";
 import SvgIcon from "@jamescoyle/vue-icon";
-import { mdiMenu, mdiEmailFast, mdiCloseOutline } from "@mdi/js";
+import { mdiMenu, mdiCloseOutline } from "@mdi/js";
 
 // images
 import Logo from "../assets/logo-11.png";
 import SendEmail from "../assets/mail-2.png"
+
+// links list
+const links = [
+    'about', 'skills', 'portfolio', 'experience', 'testimonial'
+]
 
 // show dev section links binder
 const showDevSectionLinks = ref(true);
@@ -80,6 +77,11 @@ window.addEventListener('resize', () => {
     getScreenWidth();
 });
 
+// load data before showing nav
+onBeforeMount(()=>{
+    getScreenWidth();
+});
+
 // app navigation
 const appNavigation = (path: string): void =>{
     try {
@@ -102,6 +104,11 @@ const appNavigation = (path: string): void =>{
 /* dev logo */
 #dev-logo {
     object-fit: cover;
+}
+
+/* dev links */
+.dev-section-link{
+    text-transform: capitalize;
 }
 
 /* responsive nav */
@@ -142,6 +149,7 @@ const appNavigation = (path: string): void =>{
     color: #f6f6f6;
     font-size: 14px;
     padding: .5em 0;
+    text-transform: capitalize;
 }
 
 .responsive-nav-link:hover{
@@ -169,8 +177,8 @@ const appNavigation = (path: string): void =>{
 
     /* dev logo */
     #dev-logo {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
     /* dev section links */
@@ -201,8 +209,8 @@ const appNavigation = (path: string): void =>{
 
     /* dev send mail */
     #dev-send-mail{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         object-fit: 'cover';
     }
 }
@@ -227,8 +235,8 @@ const appNavigation = (path: string): void =>{
 
     /* dev logo */
     #dev-logo {
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
     }
 
     /* dev section links */
@@ -259,8 +267,8 @@ const appNavigation = (path: string): void =>{
 
     /* dev send mail */
     #dev-send-mail{
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
         object-fit: 'cover';
     }
 }
@@ -459,8 +467,9 @@ const appNavigation = (path: string): void =>{
 
     /* dev logo */
     #dev-logo {
-        width: 65px;
-        height: 65px;
+        /* border: 1px solid red; */
+        width: 50px;
+        height: 50px;
     }
 
     /* dev section links */
