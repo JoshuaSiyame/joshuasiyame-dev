@@ -57,7 +57,7 @@ const socialLinks = [
     },
     {
         icon: mdiYoutube,
-        link: 'https://youtube.com/joshuasiyame_dev'
+        link: 'https://youtube.com/@joshuasiyame_dev'
     },
     // {
     //     icon: ,
