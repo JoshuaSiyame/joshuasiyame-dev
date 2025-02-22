@@ -35,7 +35,7 @@ const experiences = [
                         `
     },
     {
-        time: '01/2024 - 25/01/2025',
+        time: '15/01/2024 - 25/01/2025',
         role: "Fullstack Web Developer",
         company: 'LindaPesa Tanzania Limited.',
         text: `\Developed and maintained both front-end and back-end applications, with a focus on clean,
