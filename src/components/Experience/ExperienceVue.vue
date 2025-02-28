@@ -35,6 +35,14 @@ const experiences = [
                         `
     },
     {
+        time: '10/01/2025 - Present',
+        role: "Founder, Fullstack Software Engineer",
+        company: 'BinarySkool',
+        text: `I’m the founder of this ed-tech platform, built for learners of all levels with the aim of learning, 
+        building, and growing together. Our mission is to create an inclusive space that empowers individuals 
+        with the skills and knowledge needed to succeed in the ever-evolving tech landscape.`
+    },
+    {
         time: '15/01/2024 - 25/01/2025',
         role: "Fullstack Web Developer",
         company: 'LindaPesa Tanzania Limited.',
