@@ -31,3 +31,41 @@ npm run dev
 ```sh
 npm run build
 ```
+
+
+Some code for new company
+
+Absolutely! Here's a few ways we can arrange those words into sentences or phrases that sound meaningful and powerful, depending on the tone you’re aiming for:
+
+---
+
+### 🔥 **Mission Statement Style:**
+> "Driven by vision, strengthened by unity, and led with focus — we embody leadership, strength, and dominance."
+
+---
+
+### 🧭 **Tagline Style (punchy + brandable):**
+- **"Unity. Vision. Strength. Leadership that Dominates."**
+- **"Where Vision Meets Strength. Where Unity Leads."**
+- **"Dominance through Unity, Focus, and Leadership."**
+- **"Building Tomorrow with Vision, Strength, and Purpose."**
+
+---
+
+### 🏗️ **Brand Pillars Format:**
+> Our core values:
+> - **Vision** – seeing beyond the now  
+> - **Focus** – delivering with precision  
+> - **Unity** – building as one  
+> - **Strength** – powering through challenges  
+> - **Leadership** – guiding the future  
+> - **Dominance** – owning our space
+
+---
+
+### 💼 **Corporate Tone:**
+> "We lead with vision and focus. We grow through unity and strength. We stand out through leadership and dominance."
+
+---
+
+Would you like a version tailored for a **tech company**, **startup**, or maybe something more **inspirational** or **edgy**? I can remix it depending on the vibe you're going for.
